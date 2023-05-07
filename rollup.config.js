@@ -13,6 +13,11 @@ function output(path) {
       input: [`./packages/${path}/src/index.ts`],
       output: [
         {
+          file: `./package/${path}/dist/index.js`,
+          format: "esm",
+          sourcemap: true,
+        },
+        {
           file: `./packages/${path}/dist/index.js`,
           format: 'umd',
           name: 'web-monitor',
