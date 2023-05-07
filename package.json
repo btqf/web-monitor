@@ -1,0 +1,22 @@
+{
+  "name": "webmonitor",
+  "version": "1.0.0",
+  "description": "web monitor system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "changeset": "changeset",
+    "packages-version": "changeset version",
+    "publish": "changeset publish --registry=https://registry.npmjs.com/"
+  },
+  "keywords": [],
+  "author": "btqf",
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "rollup": "2.78.0",
+    "rollup-plugin-typescript2": "0.34.1",
+    "typescript": "4.9.4"
+  }
+}
